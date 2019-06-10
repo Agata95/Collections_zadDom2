@@ -32,8 +32,13 @@ package com.javagda25.Collections_zadDom2;
 // "VehicleAlreadyOnHighwayException". Niech jest to wyjątek niejawny.
 // - kwota naliczania dla samochodów osobowych i ciężarówek powinna być inna.
 
+import java.time.LocalDateTime;
+
 public class Main {
     public static void main(String[] args) {
+        Highway highway = new Highway();
+        LocalDateTime data = highway.czas();
+        System.out.println(data);
 
     }
 }
